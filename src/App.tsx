@@ -32,7 +32,7 @@ function App() {
                         setTicker(lastJsonMessage?.data);
                     }
                 }
-            }
+            },
         },
     );
 
@@ -60,48 +60,55 @@ function App() {
 
     return (
         <>
-			<div className="container mt-5 col-lg-12">
+            <div className="container mt-5 col-lg-12">
+                <div className="row">
+                    <h1 className="text-center">
+                        <a
+                            className="text-decoration-none text-warning fw-bold"
+                            href="https://github.com/AlexGalhardo/criptobot.alexgalhardo.com"
+                            target="_blank"
+                        >
+                            Galhardo Cripto BOT
+                        </a>
+                    </h1>
 
-				<div className="row">
+                    <div className="mt-5 col-lg-9 h-100">
+                        <div id="tradingview_ef138"></div>
+                    </div>
 
-					<h1 className="text-center">
-						<a className="text-decoration-none text-warning fw-bold" href="https://github.com/AlexGalhardo/criptobot.alexgalhardo.com" target="_blank">
-							Galhardo Cripto BOT
-						</a>
-					</h1>
-
-					<div className="mt-5 col-lg-9 h-100">
-						<div id="tradingview_ef138"></div>
-					</div>
-
-					<div className="container mt-5 col-lg-3">
-						<div className="text-start">
-							Symbol{" "}
-							<hr />
-							<select className="form-select text-center fw-bold" id="symbol" defaultValue={config.symbol} onChange={onSymbolChange}>
-								<option value={"BTCUSDT"}>Bitcoin BTC USDT</option>
-								<option value={"ETHUSDT"}>Ethereum ETH USDT</option>
-								<option value={"SOLUSDT"}>Solana SOL USDT</option>
-								<option value={"DOTUSDT"}>Polkadot DOT USDT</option>
-								<option value={"LINKUSDT"}>Chainlink LINK USDT</option>
-								<option value={"PEPEUSDT"}>Pepe coin PEPE USDT</option>
-								<option value={"SHIBUSDT"}>Shiba Inu PEPE USDT</option>
-								<option value={"DOGEUSDT"}>Dogecoin DOGE USDT</option>
-							</select>
-						</div>
-						<br/><br/>
-						<div>
-							<p>Ticker 24h</p>
-							<hr />
-							<p>Open: {ticker?.o}</p>
-							<p className="text-success fw-bold">High: {ticker?.h}</p>
-							<p className="text-danger fw-bold">Low: {ticker?.l}</p>
-							<p>Last: {ticker?.c}</p>
-							<p className="text-info">Change %: {ticker?.P}</p>
-						</div>
-					</div>
-				</div>
-			</div>
+                    <div className="container mt-5 col-lg-3">
+                        <div className="text-start">
+                            Symbol <hr />
+                            <select
+                                className="form-select text-center fw-bold"
+                                id="symbol"
+                                defaultValue={config.symbol}
+                                onChange={onSymbolChange}
+                            >
+                                <option value={"BTCUSDT"}>Bitcoin BTC USDT</option>
+                                <option value={"ETHUSDT"}>Ethereum ETH USDT</option>
+                                <option value={"SOLUSDT"}>Solana SOL USDT</option>
+                                <option value={"DOTUSDT"}>Polkadot DOT USDT</option>
+                                <option value={"LINKUSDT"}>Chainlink LINK USDT</option>
+                                <option value={"PEPEUSDT"}>Pepe coin PEPE USDT</option>
+                                <option value={"SHIBUSDT"}>Shiba Inu PEPE USDT</option>
+                                <option value={"DOGEUSDT"}>Dogecoin DOGE USDT</option>
+                            </select>
+                        </div>
+                        <br />
+                        <br />
+                        <div>
+                            <p>Ticker 24h</p>
+                            <hr />
+                            <p>Open: {ticker?.o}</p>
+                            <p className="text-success fw-bold">High: {ticker?.h}</p>
+                            <p className="text-danger fw-bold">Low: {ticker?.l}</p>
+                            <p>Last: {ticker?.c}</p>
+                            <p className="text-info">Change %: {ticker?.P}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </>
     );
 }
