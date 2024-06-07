@@ -1,13 +1,44 @@
-body {
-	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-		sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+html {
+  --color-1: #463220;
+  --color-2: #66593c;
+  --color-3: #eceadd;
+  --color-4: #f7f8f5;
+  --color-5: #ffffff;
+  --color-6: #5881a9;
+  --gap-s: 0.625rem;
+  --gap: 1rem;
 }
 
-code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-		monospace;
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+  color: var(--color-5);
+  background: var(--color-5);
+  font-size: 1.3rem;
+  background-color: #212529;
+}
+
+small {
+	color: black;
+}
+
+.button {
+  text-align: center;
+}
+
+.button:active {
+  box-shadow: 3px 3px #fff;
+  transform: translateY(2px);
+}
+
+a {
+	text-shadow: 5 5px --color-5;
+}
+
+#tradingview_ef138 {
+	width: 960px;
+	height: 560px;
+	margin-bottom: 10px;
 }

@@ -1,10 +1,10 @@
 <div align="center">
-  <h1 align="center"><a href="https://criptobot.alexgalhardo.com/" target="_blank">criptobot.alexgalhardo.com</a></h1>
+  	<h1 align="center"><a href="https://criptobot.alexgalhardo.com/" target="_blank">criptobot.alexgalhardo.com</a></h1>
 </div>
 
 ## Introduction
 
-- A simple project based on a tutorial using Binance WebSockets and ReactJS to render realtime Bitcoin and Ethereum prices.
+- A simple project using Binance WebSockets, Vite, ReactJS + TypeScript to render in realtime crypto currencies trading prices.
 
 ## References
 
@@ -13,47 +13,29 @@
 
 ## Development Setup Local
 
-- Clone project
+- Install Bun: <https://bun.sh/docs/installation>
 
-<!---->
+1. Clone repository
+```bash
+git clone https://github.com/AlexGalhardo/criptobot.alexgalhardo.com
+```
 
-    git clone https://github.com/AlexGalhardo/criptobot.alexgalhardo.com
+2. Enter repository
+```
+cd criptobot.alexgalhardo.com/
+```
 
-- Enter folder
-
-<!---->
-
-    cd criptobot.alexgalhardo.com/
-
-- Install dependencies
-
-<!---->
-
-    npm i
-
-- Start local server
-
-<!---->
-
-    npm run dev
-
-- Go to: <http://localhost:5173>
+3. Run setup.sh
+```
+chmod +x ./setup.sh && ./setup.sh
+```
 
 ## Build for deploy
 
-- Create build
-
-<!---->
-
-    npm run build
-
-- Preview production build locally
-
-<!---->
-
-    npm run preview
-
-- Go to: <http://localhost:4173/>
+a. Create build
+```
+bun run build
+```
 
 ## LICENSE
 
