@@ -91,7 +91,7 @@ function App() {
                                 <option value={"DOTUSDT"}>Polkadot DOT USDT</option>
                                 <option value={"LINKUSDT"}>Chainlink LINK USDT</option>
                                 <option value={"PEPEUSDT"}>Pepe coin PEPE USDT</option>
-                                <option value={"SHIBUSDT"}>Shiba Inu PEPE USDT</option>
+                                <option value={"SHIBUSDT"}>Shiba Inu SHIB USDT</option>
                                 <option value={"DOGEUSDT"}>Dogecoin DOGE USDT</option>
                             </select>
                         </div>
